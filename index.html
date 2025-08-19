@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header id="header" >
         <h1>Minha primeira página HTML</h1>
         <a href="./page.html">Navegar para Page</a>
     </header>
@@ -16,14 +16,17 @@
     <!-- Conteúdo da página -->
     <main>
         <section>
-            <h2>Seção de Listas:</h2>
+            <h2 id="exemplo-h2" >
+                Seção de Listas:
+            </h2>
 
             <h3>Lista não ordenada</h3>
-            <ul>
+            <ul id="ul">
                 <li>Item 1</li>
                 <li>Item 2</li>
                 <li>Item 3</li>
             </ul>
+            <button type="button" id="add-item">Adicionar</button>
 
             <h3>Lista ordenada</h3>
             <ol>
@@ -78,15 +81,20 @@
                 </div>
 
                 <button type="submit">Enviar</button>
+
+                <button id='buttonExemploJS' type="button">
+                    Exemplo JS
+                </button>
             </form>
         </section>
     </main>
 
     <!-- Rodapé -->
-    <footer>
+    <footer id="batata-footer">
         <p>
             Minha primeira página - &copy; Todos os direitos reservados
         </p>
     </footer>
+    <script src="./scripts/exemplo.js"></script>
 </body>
 </html>
