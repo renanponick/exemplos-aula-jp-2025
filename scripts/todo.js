@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     addButton.addEventListener('click', addTodo);
 
+    document.addEventListener('keypress', (event) => {
+        if(event.key == 'Enter') {
+            addTodo();
+        }
+    })
+
     function addTodo() {
         const texto = todoInput.value.trim();
         if (texto !== '') {
